@@ -1,0 +1,38 @@
+<div id="form">
+    <form method="POST" action="/saveBancf" enctype="application/x-www-form-urlencoded">
+        <div>
+            <p><label for="ami">Numéro AMI :</label><input pattern="[0-9]{1,4}" type="text" name="ami" id="ami"/></p>
+            <p><label for="emetteur">Emetteur :</label><input type="text" name="emetteur" id="emetteur"/>
+            <label for="up">UP concernée :</label><input list="up" name="up"/>
+                <datalist id="up">
+                    <option value="BAAD">
+                    <option value="BAELEC">
+                    <option value="UP_ALT_ENERGIE">
+                    <option value="UP_AUTOMATION">
+                    <option value="UP_AUTOMATION_GBC">
+                    <option value="UP_FUELLING">
+                </datalist>
+            <!--BAAD BAELEC UP ALT ENERGIES UP AUTOMATION UP AUTOMATION RETOUR GBC UP FUELLING-->
+            <p><label for="dateEnregistrement">Date :</label><input type="date" name="dateEnregistrement" id="dateEnregistrement"/></p>
+            <p><label for="codeArticle">Code article :</label><input pattern="[0-9]{8}" type="text" name="codeArticle" id="codeArticle" required="required"/>
+            <label for="indice">Indice :</label><input pattern="[A-Z]{1}" type="text" name="indice" id="indice"/></p>
+            <p><label for="designationArticle">Désignation article :</label><input type="text" name="designationArticle" id="designationArticle"/></p>
+            <p><label for="qte">Qté :</label><input pattern="[0-9]{1,4}" type="number" name="qte" id="qte" required="required"/></p>
+            <p><label for="numeroSerie">Numéro de série :</label><input type="text" name="numeroSerie" id="numeroSerie"/></p>
+            <p><label for="anomalie">Descritpion anomalie :</label><input type="text" name="anomalie" id="anomalie" required="required"/></p>
+            <p><label for="fournisseur">Fournisseur :</label><input type="text" name="fournisseur" id="fournisseur" required="required"/></p>
+            <p><label for="of">Of :</label><input pattern="[A-Z]{3}[0-9]{3}[0-9\-]{0,4]" type="text" name="of" id="of"/></p>
+            <p><label for="etatAvancement">Etat d'avancement :</label><input type="text" name="etatAvancement" id="etatAvancement"/></p>
+            <p><label for="responsableAction">Responsable action :</label><input type="text" name="responsableAction" id="responsableAction"/></p>
+            <p><label for="coutUnitaire">Cout unitaire :</label><input type="text" name="coutUnitaire" id="coutUnitaire"/></p>
+            <p><input type="submit" name="formBancfValidate" id="formBancfValidate"/></p>
+        </div>
+    </form>
+</div>
+<script>
+var dateBancf = document.getElementById('dateEnregistrement');
+var date = new Date().toISOString();
+date = date.substring(0,10);
+date = date.replace('/([0-9]{4})-([0-9]{2})-([0-9]{2})/',"$3-$2-$1");
+dateBancf.value = date;
+</script>

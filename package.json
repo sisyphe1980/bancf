@@ -1,0 +1,19 @@
+{
+  "name": "lafon-bancf",
+  "version": "1.0.0",
+  "description": "Gestion du BANCF LAFON ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grégory Attard",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "excel4node": "^1.7.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "sqlite3": "^4.1.1"
+  },
+  "dependencies": {}
+}

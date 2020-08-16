@@ -1,0 +1,27 @@
+1 -- template affichage d'un objet bancf ok le 01/11/2019
+2 -- enregistrement d'un objet bancf via formulaire ou directement dans tableau?
+3 -- génération rapport xlsx via excel4node    -->Intégration excel4node ok + 1ere test ok 01/11/2019
+       -->création template xlsx   
+       -->Génération rapport
+4 -- utiliser SQLITE ok
+5 -- création formulaire enregistrement un article BANCF + contrôle sur le formulaire html 02/11/2019 en cours ( il faut rajouter des contrôles)
+6 -- ajout d'autocomplétion sur le formulaire (en Attente pas prioritaire)
+7 -- ajouter l'objet BANCF à la liste des objets ok
+8 -- suppression de l'objet bancf par suppression sur un lien ok 
+9 -- supprimer de l'affichage l'objet supprimer puis affciher une alert de suppression ok
+10 -- création formulaire pour générer un rapport
+11 -- définir un chemin paramétrable de stockage des formulaire
+12 -- permettre la modification d'un objet en bdd
+13 -- pour la génération de rapport il faut selectionner simplement les fournisseurs en défaut qui n'ont pas de rapport de crée
+14 -- sélectionner le mois
+16/02/2020
+Ajout d'un objet crée via formulaire dans la bdd dbbancf crée via sqlite 3
+Modification de la vue qui affiche les objets BANCF avec l'ajout d'un lien pour le supprimer de la bdd
+19/02/2020
+Insertion en dbbancf de données de test
+Suppresion par req ajax de l'objet bancf en dbbancf puis du template
+Début de création du formulaire de création de rapport
+23/02/2020
+création d'un lien pour acceder au formulaire de création de rapport
+
+

@@ -1,0 +1,50 @@
+<table>
+    <tr>
+        <th>Action</th>
+        <th>N°AMI</th>
+        <th>N°RAPPORT</th>
+        <th>Emetteur</th>
+        <th>UP concernée</th>
+        <th>Date</th>
+        <th>Code article</th>
+        <th>Indice</th>
+        <th>Désignation Article</th>
+        <th>Qté</th>
+        <th>N°série</th>
+        <th>Anomalie</th>
+        <th>Fournisseur</th>
+        <th>OF</th>
+        <th>Commande</th>
+        <th>Etat Avancement</th>
+        <th>Date Clôture</th>
+        <th>Responsable action</th>
+        <th>Cout unitaires</th>        
+    </tr>
+    {{#each listBancf}}
+    <tr>
+        <td><a class="delete" href="/sup" title="supprimer élément">Sup</a></td>
+        <td>{{ami}}</td>
+        <td>{{numRapport}}</td>
+        <td>{{emetteur}}</td>
+        <td>{{up}}</td>
+        <td>{{dateEnregistrement}}</td>
+        <td>{{codeArticle}}</td>
+        <td>{{indice}}</td>
+        <td>{{designationArticle}}</td>
+        <td>{{qte}}</td>
+        <td>{{numeroSerie}}</td>
+        <td>{{anomalie}}</td>
+        <td>{{fournisseur}}</td>
+        <td>{{of}}</td>
+        <td>{{commande}}</td>
+        <td>{{etatAvancement}}</td>
+        <td>{{dateCloture}}</td>
+        <td>{{responsableAction}}</td>
+        <td>{{coutUnitaire}}</td>
+    </tr>
+    {{/each}}
+
+</table>
+
+<!--<button id="createReport">Générer un rapport</button>-->
+<a href="/createReport">Générer un rapport</a>

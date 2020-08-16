@@ -1,0 +1,12 @@
+<div id="form">
+    <form method="post" action="createReport" enctype="application/x-www-form-urlencoded">
+        <label for=="frns">Fournisseur</label><input list="frns" name="frns" required="required">
+            <datalist id="frns">
+                    {{#each listFrnsForReport}}
+                    <option value="{{fournisseur}}"/>
+                    {{/each}}
+            </datalist>
+        <!--<p><label for="id">fournisseur</label><input type="text" name="frns"/></p>-->
+        <p><label for="id">mois</label><input type="text" name="moisFrns" required="required"/></p>
+    </form>
+</div>
